@@ -163,7 +163,7 @@ a {
 
 /* THIS IS THE IMAGE PART YOU ASKED ABOUT */
 .project-img {
-    width: 100%;
+    width: 90%;
     height: 180px;
     object-fit: cover;
     border-radius: 5px;
@@ -267,4 +267,5 @@ footer {
         display: inline-block;  /* Keeps the box shape intact */
         margin-top: 10px;       /* Extra space above the resume button */
     }
+
 }
