@@ -22,21 +22,26 @@
             
             <h1 style="color: #003366; margin-top: 0;">Arithmetic Logic Unit (ALU)</h1>
             <span class="badge" style="background: #e0e7ff; color: #003366; padding: 5px 10px; border-radius: 15px; font-size: 0.8rem; font-weight: bold;">Digital System Logic</span>
-            <span class="badge" style="background: #e0e7ff; color: #003366; padding: 5px 10px; border-radius: 15px; font-size: 0.8rem; font-weight: bold;">Hardware Design</span>
             
-            <img src="alu.png" alt="DE10-Lite Intel FPGA board" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px; margin: 20px 0; border: 1px solid #ddd;">
+            
+            <img src="alu.jpeg" alt="DE10-Lite Intel FPGA board" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 8px; margin: 20px 0; border: 1px solid #ddd;">
 
             <h2 style="color: #003366; border-bottom: 2px solid #eee; padding-bottom: 10px;">Project Background</h2>
             <p>
-                The Arithmetic Logic Unit (ALU) is one of the fundamental building blocks of a computer's Central Processing Unit (CPU). For this project, I designed an ALU to perform essential arithmetic and logical operations, proving out the core concepts of digital system design and binary mathematics at the hardware level.
+                The Arithmetic Logic Unit (ALU) is one of the fundamental building blocks of a computer's Central Processing Unit (CPU). For this academic project, I designed an ALU to perform essential arithmetic calculations by using switches to determine what outcome of a 4-bit binary number it wants. This was done by performing a truth table-like operation on two 4-bit binary numbers.
             </p>
 
-            <h2 style="color: #003366; border-bottom: 2px solid #eee; padding-bottom: 10px;">My Role & Methodology</h2>
+            <h2 style="color: #003366; border-bottom: 2px solid #eee; padding-bottom: 10px;">Functions Explained</h2>
             <ul>
-                <li style="margin-bottom: 10px;">Engineered the logic gate architecture required to execute mathematical operations (addition, subtraction) and bitwise logical operations (AND, OR, XOR).</li>
-                <li style="margin-bottom: 10px;">Programmed and synthesized the design onto a <strong>DE10-Lite Intel FPGA</strong> board.</li>
-                <li style="margin-bottom: 10px;">Tested the hardware implementation using the board's switches and LED displays to verify correct binary outputs.</li>
-                <li style="margin-bottom: 10px;">Troubleshot logic timing and signal routing issues to ensure stable performance.</li>
+                <li style="margin-bottom: 10px;">If the switches are 00(OFF,OFF): The ALU acts like an addition button, so it adds A + B.</li>
+                <li style="margin-bottom: 10px;">If the switch is 01 (OFF,ON): The ALU acts like an subtractor button for the 2 4-bit numbers, so it subtracts A - B.</li>
+                <li style="margin-bottom: 10px;">If the switch is 10 (ON,OFF): The ALU acts like an AND log gate, meaning if both numbers are 1 then it brings out an 1, otherwise an 0.</li>
+                <li style="margin-bottom: 10px;">If the switches are 11(ON,ON): The ALU acts like an OR logic gate, meaning that if one of the numbers in the operation is 1, then the output is 1.</li>
+            </ul>
+
+             <h2 style="color: #003366; border-bottom: 2px solid #eee; padding-bottom: 10px;">Output of Operation</h2>
+            <ul>
+                <li style="margin-bottom: 10px;"> Result ($F_3, F_2, F_1, F_0$): After doing whatever math or logic you told it to do, the machine spits out a final 4-bit answer.</li>
             </ul>
 
             <h2 style="color: #003366; border-bottom: 2px solid #eee; padding-bottom: 10px;">Technologies & Hardware</h2>
